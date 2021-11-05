@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+      <title>تماس با ما</title>
+<meta charset="utf-8">
+<style type="text/css">
+body{
+  border :black 2px solid ;
+  background-color: navajowhite;
+
+
+  }
+
+:lang(fa){
+
+    direction: rtl;
+    text-align: right;
+ }
+ table{
+width: 41%;
+text-align: left;
+   }
+ input{
+  width: 100%;
+}
+#name{
+  float: right;
+  width: 40%;
+}
+
+textarea{
+ height: 6em;
+ width: 100%;
+}
+#submit,#reset{
+  width: 30%;
+  margin: 3px;
+  float: right;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  
+ 
+}
+
+
+</style>
+
+
+</head>
+<body >
+ <h1 style=" margin-right: 24px;">تماس باما</h1>
+ <table> 
+    <form  action="contact.php" method="post" >
+      <tr>
+        <td>
+<lable for="name" >نام ونام خانوادگی:</lable>
+</td>
+<td>
+<input type="text"id="fulname" name="fulname" >
+</td>
+
+</tr>
+<tr>
+  <td>
+<label for="email">ایمیل :</label>
+</td>
+<td>
+<input type="email" id="email" name="email">
+</td>
+
+</tr>
+<tr>
+  <td>
+<label for="title" >عنوان :</label>
+</td>
+<td>
+<input type="text"id="title" name="title">
+</td>
+
+</tr>
+<tr>
+  <td>
+<label for="text">متن پیام :</label>
+</td>
+<td>
+<textarea id="text" name="bigtext"></textarea>
+</td>
+<br><br>
+</tr>
+<tr>
+  <td></td>
+  <td><input type="submit"value="ارسال"id="submit"><input type="reset" value="بازنشانی"id="reset"></td>
+
+</tr>
+</form>
+
+
+</table>
+</body>
+</html>

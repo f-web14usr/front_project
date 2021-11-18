@@ -1,0 +1,49 @@
+
+@import url(buttons.css);
+:lang(fa){
+    direction: rtl;
+    
+}
+form{
+    margin-right: 200px;
+    margin-top: 50px;
+}
+.text{
+    text-align: left;
+    width:  500px;
+    height: 40px;
+    margin:4px 0 ;
+    border-radius: 20px;
+    border: solid rgba(0, 0, 0, 0.12) 1px;
+    padding:0px 16px 0px 12px; 
+  outline: none;
+}
+
+
+
+.text:active,.text:focus,.text:visited{
+    border: solid 1px #00B0FF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+}
+ label {
+     margin-right: 15px;
+     
+    text-align: right;
+    direction: rtl;
+  font-family: cursive;
+}
+.text-fulname{
+   text-align: right;
+  padding-right: 16px;
+   margin: 8px 0px;
+   max-width: 234px ;
+  
+
+}
+.last-name{
+    margin-right:240px ;
+}
+ form button{
+   margin: 8px 50px;
+}
+

@@ -1,16 +1,10 @@
-
-@import url(buttons.css);
-:lang(fa){
-    direction: rtl;
-    
-}
 form{
     margin-right: 200px;
     margin-top: 50px;
 }
 .text{
     text-align: left;
-    width:  400px;
+    width:  500px;
     height: 40px;
     margin:4px 0 ;
     border-radius: 20px;
@@ -18,7 +12,14 @@ form{
     padding:0px 16px 0px 12px; 
   outline: none;
 }
-
+.multi-text{
+  text-align: right;
+  height:200px;
+  vertical-align: top;
+  padding: 8px 16px 8px 12px;
+  width:  600px;
+ 
+}
 
 
 .text:active,.text:focus,.text:visited{
@@ -36,14 +37,40 @@ form{
    text-align: right;
   padding-right: 16px;
    margin: 8px 0px;
-   max-width: 180px ;
-  
-
+   max-width: 234px ;
+ }
+ .short-text{
+  text-align: center;
+ padding-right: 16px;
+  margin: 8px 8px;
+  max-width: 48px ;
+  height: 30px;
 }
-.line-label{
-    margin-right:180px ;
+.short-text-label{
+  margin-right:30px ;
+}
+.last-name{
+    margin-right:240px ;
 }
  form button{
    margin: 8px 50px;
 }
 
+
+.radio-button{
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  color: var(--primary);
+  vertical-align: top;
+  margin-right: 4px;
+ padding: 8px;
+
+
+}
+#add-product{
+  margin-right: 64px;
+}
+.file{
+  margin: 12px 8px;
+}

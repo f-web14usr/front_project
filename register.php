@@ -1,20 +1,15 @@
 <?php
 
+include 'settings.php';
+include 'db.php';
+$db = new db($dbHost, $dbUser, $dbPass, $dbName);
 
 
-$link=new mysqli('localhost','root','','novin');
-$link->set_charset("utf8");
-if($link->connect_errno){
-    echo "مشکلی در اتصال به پایگاه داده به وجود آمده".$link->connect_error;
-    exit();
-}
 
+$sql="INSERT INTO users (fname,lname,phone,email,password) VALUES(?,?,?,?,?)";
+$result=$db-> query($sql,$_POST['fname'],$_POST['lname'],$_POST['phone'],$_POST['email'],$_POST['password']);
 
-$sql="INSERT INTO users (fname,lname,phone,email,password) VALUES('{$_POST['fname']}','{$_POST['lname']}',
-'{$_POST['phone']}','{$_POST['email']}','{$_POST['password']}')";
-if($result=$link-> query($sql))
-{
 echo "ثبت نام شما با موفیت انجام شد";
-$link ->close();
-}
+$db ->close();
+
 ?>

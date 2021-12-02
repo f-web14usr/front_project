@@ -15,7 +15,9 @@
 cursor: default;
 
 }
-
+.btn-short{
+    max-width:200px
+}
 
 .btn-filled.primary{
     font-size: 18px;

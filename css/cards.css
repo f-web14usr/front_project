@@ -1,0 +1,92 @@
+.card-group{
+    display: grid;
+    grid-template-columns: auto auto auto ;  
+    grid-gap: 8px;
+    margin: 8px;
+     max-width: 100%;
+    vertical-align: middle;
+   
+}
+.card{
+    padding: 0px;
+       border-radius: 12px;
+       padding-bottom: 8px;
+      max-height: 900px;
+       overflow: hidden;
+      display: block;
+}
+.link-card{
+    width: 100%;
+    height: 100%;
+  
+   
+    background-color: none;
+}
+.link-card:focus{
+    outline: none;
+  
+}
+.filled-card{
+       background-color: #E7E0EC;
+    }
+.filled-card:hover{
+ box-shadow: #000 0px 0px 3px ;
+
+}
+.filled-card:focus{
+   color: #4a1f6b;
+    opacity: 50%;
+}
+.filled-card:active{
+    background-color: hsl(277, 17%, 85%); 
+    box-shadow: none;
+    
+}
+.card-img-top{
+    max-width: 100%;
+  
+      padding: initial;
+     border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+.card-body{
+    margin: 16px;
+    text-align: right;
+    
+}
+.card-title{
+    font-size: 18px;
+    color: #000;
+    font-family: sans-serif;
+    margin: 0%;
+
+}
+
+.card-text{
+    font-size: 14px;
+    color: rgba(28, 27, 31,.8);
+    font-family: sans-serif;
+    margin-bottom: 24px;
+}
+.product-card-price{
+    text-align: left;
+    color: rgba(28, 27, 31,.8);
+    font-family: sans-serif;
+}
+.product-card-price::after{
+    content: "تومان";
+}
+.card-btn.primary{
+    font-size: 18px;
+    
+    width: 100%;
+    --primary:#2979FF;
+    background-color: var(--primary);
+    text-shadow: #1C1B1F;
+    color:#FFFFFF ;
+    border:none;
+    font-family: Roboto Medium;
+    outline: none;
+}
+
+    

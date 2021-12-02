@@ -8,18 +8,19 @@
     <body>
   
         <form action=""method="post"enctype="multipart/form-data">
-            <?php var_dump($product_color); ?>
+           
         
             
          <label for="p_name">نام محصول :</label>  
          <input type="text"name="p_name"id="p_name"class="text text-fulname"value="<?php  echo $product_name  ?>">
          
          <br>
-         <label for="p_date">سال ساخت :</label>  
-         <input type="text"name="p_date"id="p_date"class="text text-fulname"value="<?php  echo $product_date  ?>">
+         <label for="p_date">قیمت  :</label>  
+         <input type="text"name="price"id="price"class="text text-fulname"value="<?php  echo $product_price  ?>">
          <label for="p_count" class="short-text-label">تعداد :</label>
          <input type="number"name="p_count"id="p_count"class="text short-text"value="<?php  echo $product_count ?>">
-         
+         <label for="p_image">تصویر محصول:</label>  
+         <input type="text"name="image"id="image"class="text text-fulname"value="<?php  echo $product_image ?>">
       
          <br>
              

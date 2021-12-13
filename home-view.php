@@ -28,43 +28,39 @@
 
   
 </div>
-
-
-
-
-
         <h2>ارزان ترین محصولات</h2>
-          <!-- Slider main container -->
-<div class="grid-swiper">
-   <div class="card-group "> 
-       <!-- Additional required wrapper -->
+       
+
+        <!-- Slider main container  -->
+        <div class="swiper card-group">
+  <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <?php
-        
-        foreach( $productList as $product ){
-    echo'<div class="swiper-slide">';
-           include 'templates/productCard.php';
-    echo'</div>';
-        }
-      
-      ?>
     
-    <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+    
+  <?php
+        echo"<div class='swiper-slide grid-container'>";
+    foreach( $productList as $product ){
+     
+       include 'templates/slider-productCard.php';
+       
+    }
+    echo"</div>";
+  ?>
+     
   </div>
   <!-- If we need pagination -->
-
+  <div class="swiper-pagination"></div>
 
   <!-- If we need navigation buttons -->
-  
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 
   
 </div>
+
   
-      </div>
       
-    </div>
       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
        <script src="js/main.js"></script>
     </body>

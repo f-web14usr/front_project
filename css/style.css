@@ -2,7 +2,7 @@
 @import url(buttons.css);
 @import url(input-fields.css);
 @import url(cards.css);
-
+@import url(layout.css);
 :lang(fa){
     direction: rtl;
  

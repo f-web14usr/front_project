@@ -1,8 +1,8 @@
 <?php
-include 'adminPanel-view.php';
+include 'header.php';
 ?>
   <form  action="register-controler.php" method="post" >
-    <h1>ثبت نام درسایت   </h1>
+    <h2 >ثبت نام درسایت   </h2>
 
  <label for="fname">نام :</label> <label for="lname"class="last-name">نام خانوادگی :</label>
  <br>

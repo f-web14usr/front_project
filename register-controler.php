@@ -1,5 +1,5 @@
 <?php
-include 'adminPanel-view.php';
+include 'header.php';
 
 include 'settings.php';
 include 'db.php';

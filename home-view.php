@@ -1,12 +1,6 @@
-<!doctype html>
-<html lang="fa">
-    <head>
-        <title>  فروشگاه لوازم خانگی نوین</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css" type="text/css ">
-        <link  rel="stylesheet"   href="https://unpkg.com/swiper@7/swiper-bundle.min.css" type="text/css"/>
-    </head>
-    <body>
+     <?php
+     include 'header.php';
+     ?>
        
         <!-- Slider main container  -->
 <div class="swiper">

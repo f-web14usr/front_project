@@ -1,29 +1,8 @@
-<!doctype html>
-<html lang="fa">
-    <head>
-        <title>  محصولات</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-    </head>
-    <body class="grid-layout">
-    
-    <header>کاتالوگ محصولات</header>
-    <aside>
-
-   بخش کناری
-
-</aside>
-    <main>
-     <nav>
- منو نویگیشن
-
-     </nav>
-     
-    </main>
-
-
-
-
+<?php
+include 'header.php';
+?>
+       
+  
      <section>
    <div class="card-group"> 
   <?php

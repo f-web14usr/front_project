@@ -28,7 +28,7 @@ foreach($messageList as $message)
    ?>  
       </table>
       <br>
-      <a href="contact.html" class="btn btn-filled primary ">افزودن پیام
+      <a href="contact-view.php" class="btn btn-filled primary ">افزودن پیام
         <i class="fas fa-plus-circle"></i>
         </a>
 </section>

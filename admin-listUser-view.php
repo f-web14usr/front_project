@@ -31,7 +31,7 @@ foreach($userList as $user)
    ?>  
       </table>
       <br>
-      <a href="register.html" class="btn btn-filled primary ">ثبت نام  کاربر
+      <a href="register-view.php" class="btn btn-filled primary ">ثبت نام  کاربر
         <i class="fas fa-plus-circle"></i>
         </a>
 </section>

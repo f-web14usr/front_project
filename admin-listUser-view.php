@@ -1,16 +1,6 @@
-<!doctype html>
-<html lang="fa">
-    <head>
-        <title>  نوین|لیست کاربران</title>
-        <meta charset="utf-8 ">
-        <link rel="stylesheet " href="css/style.css" type="text/css ">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-
-    </head>
-    <body>
-        <style>
-         
-        </style>
+<?php
+include 'adminPanel-view.php';
+?>
        
    <table class="datatable"> 
    <th>id</th>
@@ -41,8 +31,9 @@ foreach($userList as $user)
    ?>  
       </table>
       <br>
-      <a href="register.html" class="btn btn-filled primary ">افزودن کاربر
+      <a href="register.html" class="btn btn-filled primary ">ثبت نام  کاربر
         <i class="fas fa-plus-circle"></i>
         </a>
-    </body>
+</section>
+</body>
 </html>

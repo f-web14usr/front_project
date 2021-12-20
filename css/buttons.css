@@ -155,6 +155,7 @@ margin-right: 8px;
 
 .btn-text-button{
     background: 0%;
+    font-size: x-large;
     background-color: none;
     border: none;
     color: #6750A4;
@@ -167,7 +168,7 @@ margin-right: 8px;
 .btn-text-button:hover{
     color: #6750A4 ;
     background-color: #E8DEF8;
-    opacity: 80%;
+ 
 }
 .btn-text-button:focus{
     color: #6750A4 ;
@@ -194,13 +195,15 @@ a.btn{
    font-size: 14px;
   vertical-align: middle;
 }
+
 a.btn i{
    margin-right:8px ;
    font-size: 18px;
   
 }
 a.btn-text-button{
-    padding: 10px 12px 10px 8px
+    padding: 10px 12px 10px 8px;
+  font-size:large;
 }
 a.btn-text-button i{
     margin-left: 16px;

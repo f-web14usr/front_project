@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'adminPanel-view.php';
 ?>
    <table class="datatable"> 
    <th>id</th>

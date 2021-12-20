@@ -2,26 +2,80 @@
 
 .grid-layout{
     display: grid;
-    grid-gap: 8px;
-    grid-template-columns: 20vw auto ;
-    grid-template-rows: 20vh 10vh auto;
+    grid-gap: 2px;
+    grid-template-columns: auto ;
+    grid-template-rows: 20vh  ;
    max-width: 100%;
-    text-align: center;
+ 
+    
 }
 .grid-layout>header{
-    grid-column: 1/span2;
+    
+    grid-column: 1/span3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: skyblue;
 }
 .grid-layout>footer{
     grid-column: 1/span2;
-   
-    height: 15vh;
+    background-color: rgb(24, 102, 17);
+    
 }
-.grid-layout>main{
-  
-    grid-column: 2/span1;
-}
+
 .grid-layout>aside{
     border-radius: 20px;
     grid-row:2/span2;
     max-width: 20vw;
+    background-color: rgba(173, 206, 219, 0.664);
+}
+#mainNav {
+    width: 100%;
+    margin-top:40px;
+}
+ #mainNav>li{
+    display: inline-block;
+    list-style: none;
+    width:6em;
+    margin: 0 30px ;
+    text-align: right;
+   
+}
+#mainNav  a{
+   display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+   text-align: center;
+   
+}
+#mainNav  a:hover:not(#registerlink):not(#loginlink){
+    text-decoration: none;
+    color: black;
+     
+    border-bottom:	0.2em solid orange;	
+}
+#mainNav  a:active{
+    color: red;
+  background-color:orange ; 
+    border-bottom:	0.2em solid orange;	
+}
+
+h1{
+    text-align: center;
+}
+
+#registerlink{
+margin-right:25vw;
+    display: block;
+    width: 100px;
+    margin-bottom:80px ;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+#loginlink{
+    margin-right:24vw;
+    display: block;
+    width: 50px;
+    margin-bottom:80px ;
+    padding: 8px 25px;
+    border-radius: 4px;
 }

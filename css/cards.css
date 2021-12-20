@@ -1,9 +1,8 @@
 .card-group{
     display: grid;
       grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto;
+      grid-template-rows: auto ;
       grid-gap: 8px;
-      height: 50%vh;
 }
 .card{
     padding: 0px;
@@ -20,7 +19,7 @@
        padding-bottom: 8px;
         overflow: hidden;
       display: block;
-      width: 400px;
+      width: 330px;
       max-height: fit-content;
 }
 .link-card{
@@ -95,16 +94,16 @@
     outline: none;
 }
 .swiper {
-   width: 100%;
-   height: 600px;
+   width: 1000px;
+   
    margin-right: 40px;
   }
   .grid-container{
       display: grid;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto;
+      grid-template-columns: auto auto auto    ;
+      
       grid-gap: 8px;
-    
-      height:700px;
+    width: 700px;
+      
   }
  

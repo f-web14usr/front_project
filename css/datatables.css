@@ -1,11 +1,11 @@
 table.datatable{
 border: 1px solid rgba(0, 0, 0, 0.12);
 border-radius: 4px;
-border-collapse: collapse;
+border-collapse: collapse ;
 vertical-align: middle;
 text-align: center;
 width: 100%;
-
+background-color: #ffffff;
 
 }
 .datatable tr{

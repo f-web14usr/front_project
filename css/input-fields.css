@@ -1,6 +1,8 @@
 form{
-    margin-right: 200px;
-    margin-top: 50px;
+   text-align: right;
+  
+  margin-right: 16px;
+    width: 100%;
 }
 .text{
     text-align: left;

@@ -1,5 +1,9 @@
 <?php
+
+
+
 include 'adminPanel-view.php';
+
 ?>
        
    <table class="datatable"> 
@@ -28,6 +32,7 @@ foreach($userList as $user)
    
    ";
 }
+
    ?>  
       </table>
       <br>

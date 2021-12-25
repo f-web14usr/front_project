@@ -45,5 +45,7 @@ $product_valency=$product['p_valency'];
 
 include 'editProduct.php';
 }
+
+
 $db->close();
 ?>

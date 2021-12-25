@@ -1,9 +1,10 @@
 <?php
-
 include 'adminPanel-view.php';
+
+
 ?>
   
-        <form action="addProduct.php"method="post"enctype="multipart/form-data">
+        <form action=""method="post"enctype="multipart/form-data">
             
         
             
@@ -56,3 +57,5 @@ include 'adminPanel-view.php';
         </section>
     </body>
 </html>
+
+

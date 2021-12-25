@@ -2,7 +2,16 @@
 
 include 'settings.php';
 include 'db.php';
+include 'security.php';
 
+if(! Authentication :: check())
+{
+    echo 'لاگین نکردی';
+    //header("Location: loginControler.php");
+}
+else if(Authentication :: check())
+ {
+    echo'لاگین کردی';
 $id = $_GET['id'];
 
 $db = new db( $dbHost, $dbUser, $dbPass, $dbName ); 
@@ -41,4 +50,5 @@ $password=$profile['password'];
 include 'edit-profile.php';
 }
 $db->close();
+}
 ?>

@@ -3,6 +3,7 @@ include 'settings.php';
 include 'db.php';
 
 
+
 $db = new db($dbHost, $dbUser, $dbPass, $dbName);
 
 

@@ -3,6 +3,7 @@ include 'settings.php';
 include 'db.php';
 
 
+
 $db = new db($dbHost, $dbUser, $dbPass, $dbName);
 
 
@@ -13,6 +14,7 @@ $userList=$result ->fetchAll();
 
    
 include 'admin-listUser-view.php';
+
 
 $db->close();
 ?>

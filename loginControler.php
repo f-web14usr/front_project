@@ -1,13 +1,13 @@
 <?php
  include 'header.php';
-
+ session_start();
 if(isset($_POST['submit']))
 {
    
 include 'settings.php';
 include 'db.php';
 include 'security.php';
-session_start();
+
 
 
 $db = new db($dbHost, $dbUser, $dbPass, $dbName);
@@ -29,7 +29,7 @@ Authorization :: issAdmin($role);
 }
 if($role==0){
 echo "واردشدید";
-header("Location: home-controler.php");
+header("Location: user_panel.php");
 }
 else if($role==1){
     echo " ادمین واردشدید";

@@ -103,10 +103,25 @@ box-shadow: none;
     margin-right: 30px;
 }
 
+.icon-btn{
+    padding: 8px;
+    border-radius: 20px;
+text-decoration: none;
+}
+.icon-btn:hover{
+background-color: rgba(109, 123, 204, 0.20);
 
-
-
-
+}
+.like{
+    color: red;
+}
+.basket-icon{
+   background-color:#00E676;
+   color: #FFFBFE  ;
+}
+.bookmark-icon{
+    color: orange;
+}
 
 
 
@@ -116,9 +131,9 @@ box-shadow: none;
 
 
 .btn-outlined-button,.btn-outlined-button:visited{
-    background-color: #FFFBFE;
-    border: 1px solid #79747E;
-    color:#6750A4;
+    background-color: #fffbfe00;
+    border: 1px solid #2979FF;
+    color:#2979FF;
     }
 
     .btn-outlined-button:disabled{
@@ -129,8 +144,8 @@ box-shadow: none;
 .btn-outlined-button:hover{
     border:solid 1px #79747E;
     color: #6750A4;
-   background-color: #E7E0EC;
-   opacity: 0.75;
+   background-color: hsl(275, 24%, 90%,75%);
+  
 }
 .btn-outlined-button:focus{
     outline: none;
@@ -209,3 +224,15 @@ a.btn-text-button i{
     margin-left: 16px;
     font-size: 18px;
 }
+#registerlink{
+    border-radius: 4px;
+    padding:  12px 60px;
+    margin-right: 8px;
+    vertical-align: middle; 
+    }
+    #loginlink{
+        border-radius: 4px;
+        padding:  14px 60px;
+        vertical-align: bottom; 
+    }
+    

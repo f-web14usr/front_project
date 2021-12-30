@@ -20,7 +20,7 @@ foreach($messageList as $message)
 <td>{$message['title']}</td>
 <td>{$message['bigtext']}</td>
 <td><a href =''class='btn btn-outlined-button'>پاسخ</a></td>
-<td><a href =''class='btn btn-outlined-button'>حذف</a></td>
+<td><a href ='admin-deleteContactControler.php?id={$message['id']}'class='btn btn-outlined-button'>حذف</a></td>
 </tr>
    
    ";

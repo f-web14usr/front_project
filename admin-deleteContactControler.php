@@ -11,9 +11,9 @@ $db = new db($dbHost, $dbUser, $dbPass, $dbName);
 
 
 
-    $sql="DELETE  FROM users WHERE id=?";
+    $sql="DELETE  FROM  message WHERE id=?";
     $result=$db->query($sql,$uid);
-    echo 'کاربر حذف شد';
+  echo 'پیام حذف شد';
 
 
 

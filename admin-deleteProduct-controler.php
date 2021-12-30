@@ -11,9 +11,9 @@ $db = new db($dbHost, $dbUser, $dbPass, $dbName);
 
 
 
-    $sql="DELETE  FROM users WHERE id=?";
+    $sql="DELETE  FROM products WHERE id=?";
     $result=$db->query($sql,$uid);
-    echo 'کاربر حذف شد';
+    echo 'محصول حذف شد';
 
 
 

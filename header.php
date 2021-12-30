@@ -1,8 +1,4 @@
-<?php
-session_start();
 
-
-?>
 <!doctype html>
 <html lang="fa">
     <head>
@@ -33,9 +29,8 @@ session_start();
 
      </header>
     <?php
-     
-  
-      include 'user_panel.php';
+
+      
     
     ?> 
     

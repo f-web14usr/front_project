@@ -112,10 +112,20 @@
   }
  .card i {
      margin-top: 38px;
-     color: black;
+  
  }
  
  .card-body>footer{
 grid-template-rows: 50vh;
   padding-top: 30px;
  }
+ .like{
+    color: red;
+}
+.basket-icon{
+   background-color:#00E676;
+   color: #FFFBFE  ;
+}
+.bookmark-icon{
+    color: orange;
+}

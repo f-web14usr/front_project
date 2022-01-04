@@ -4,33 +4,28 @@ include 'settings.php';
 include 'db.php';
 include 'security.php';
 $uid=Authentication :: uid();
-$pid=$_GET['id'];
+$productid=$_GET['id'];
 
 
 $db = new db($dbHost, $dbUser, $dbPass, $dbName);
-if(! Authentication :: check())
-{
 
-    header("Location:loginControler.php");
-    exit;
-}
-else{
 $sql="SELECT * FROM productbasket WHERE uid=? AND pid=?";
 $result=$db->query($sql,$uid,$pid);
 $basket=$result ->fetchArray();
 if(! isset($basket['id'])){
 
-    $sql="INSERT INTO productbasket (uid,pid) VALUES (?,?)";
-    $result=$db->query($sql,$uid,$pid);
+    $sql="INSERT INTO productbasket (uid,pid,quantity) VALUES (?,?,'1')";
+    $result=$db->query($sql,$uid,$productid);
     
-  
+  echo "basket";
 
 }
 else{
-echo 'محصول قبلا به سبد خرید افزوده شده';
+echo "disbasket";
+exit;
 
 }
-}
+
     $db->close();
 
 

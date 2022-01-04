@@ -22,8 +22,8 @@ if( isset($bookmark['id'])){
 
     $sql="DELETE  FROM productbookmark WHERE id=?";
     $result=$db->query($sql,$bookmark['id']);
-
-
+   
+    echo'unbookmark';
 }
 else{
     
@@ -31,7 +31,7 @@ else{
     $sql="INSERT INTO productbookmark (uid,pid) VALUES (?,?)";
     $result=$db->query($sql,$uid,$pid);
     
-  
+    echo'bookmark';
 
 
 }

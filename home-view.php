@@ -36,7 +36,7 @@
         echo"<div class='swiper-slide grid-container'>";
     foreach( $productList as $product ){
      
-       include 'templates/slider-productCard.php';
+       include 'templates/productCard.php';
        
     }
     echo"</div>";
@@ -54,8 +54,14 @@
 </div>
 
   
+
+<a href="#top" class="btn btn-filled  " id="go_top">
+<i class="fas fa-angle-up    "></i>
+
+</a>
       
       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
        <script src="js/main.js"></script>
+       <script src="js/components.js"></script>
     </body>
 </html>

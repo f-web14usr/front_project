@@ -14,7 +14,10 @@
       <h1>فروشگاه لوازم خانگی نوین</h1>
          <nav>
          <a href="register-view.php"id="registerlink"class="btn btn-filled primary">ثبت نام</a>
-   <a href="loginControler.php"id="loginlink"class="btn btn-outlined-button"> ورود </a>
+   <a href="loginControler.php"id="loginlink"class="btn btn-outlined-button "> ورود </a>
+   <a href="basketListTable-controler.php"class=" btn-filled  " id="basket-link"><i class="fas fa-shopping-cart    "></i> </a>
+   <a href="bookmarkListTable-controler.php"class=" btn-filled  " id="bookmark-link"><i class="fas fa-bookmark   "></i> </a>
+
      <ol id="mainNav">
    
    <li><a href="home-controler.php"class="">خانه </a></li>

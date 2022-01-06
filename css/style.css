@@ -3,7 +3,8 @@
 @import url(input-fields.css);
 @import url(cards.css);
 @import url(grid-layout.css);
-@import url(panel-layout.css);
+@import url(admin-panel-layout.css);
+
 :lang(fa){
     direction: rtl;
  

@@ -9,16 +9,6 @@ for(let email of emaillist)
 }
 function checkemail(e){
   
-   let emaillist=document.querySelectorAll("[type='email']");
-
-for(let email of emaillist)
-{
-    email.addEventListener('input',checkemail);
-    var mailerror="";
-   
-   
-}
-function checkemail(e){
   
     if(this.validity.valueMissing)
     {
@@ -60,7 +50,7 @@ this.classList.add("error_input");
 
 }
 
-}
+
 /*
 let anchorLists = document.querySelectorAll(".card-body");
 for( let anchor of anchorLists){
@@ -76,8 +66,8 @@ function cardFill(e){
     let address = anchor.href;
    
     window.location = address; 
-}
-*/
+}*/
+
 //آیکون لایک
 let likeiconlist=document.querySelectorAll(".fa-heart");
 
@@ -126,13 +116,13 @@ function(data){
 
 
 //ایکون سبد خرید
-let basketiconlist=document.querySelectorAll(".card-btn>.fa-shopping-cart");
+let basketiconlist=document.querySelectorAll(".btn>.fa-shopping-cart");
 
 
 for( let basketicon of basketiconlist )
 {
-  console.log(basketicon)
-    let buttonbasket=basketicon.closest(".card-btn");
+  
+    let buttonbasket=basketicon.closest(".btn");
  
     buttonbasket.addEventListener('click',basket);
 }
@@ -141,7 +131,7 @@ function basket(e){
   e.preventDefault();
   let url=this.href;
   let icon=this;
-  console.log(icon);
+  
  fetch(url)
  
 .then(
@@ -154,16 +144,13 @@ return response.text();
   function(data_basket){
     if(data_basket=='basket'){
      
-      icon.classList.add(".card-click"); 
-      icon.classList.remove(".card-btn"); 
-
+       window.alert("محصول به سبد خرید اضافه شد");
      
     }
     else if(data_basket=='disbasket')
   {
-    icon.classList.remove(".card-click"); 
-      icon.classList.add(".card-btn"); 
-   
+    window.alert("محصول قبلا به سبد اضافه شده");
+
   }
   }
   
@@ -191,7 +178,7 @@ function bookmark(e){
   e.preventDefault();
   let url=this.href;
   let icon=this.querySelector(".fa-bookmark");
-  console.log(icon);
+ console.log(url);
  fetch(url)
  
 .then(
@@ -218,7 +205,47 @@ return response.text();
   )
   
   
-  
-
-
 }
+//دکمه ثبت کامنت
+
+/*
+let comentbtn_list=document.querySelectorAll(".btn#coment_btn");
+
+for( let  comentbtn of  comentbtn_list )
+{
+    let button=comentbtn.closest(".btn");
+ 
+    button.addEventListener('mouseup',coment);
+   
+}
+function coment(e){
+ 
+  let url="";
+    
+  fetch(url)
+ 
+.then(
+function(response){
+return response.text();
+}
+
+)
+.then(
+  function(data_coment){
+    if(data_coment=='send'){
+     
+    }
+    else {
+     
+    
+   }
+    
+  }
+  
+  )
+  
+   
+
+
+  
+}*/

@@ -20,7 +20,7 @@ echo "
 <h5 class='card-title'>{$product['p_name']} </h5>
 <p class='card-text'>{$product['body_text']}</p>
 <h3 class='product-card-price'>{$product['price']} </h3>
-<a href='productDetails_controller.php?id={$product['id']}'  class='btn btn-text-button ' >اطلاعات بیشتر</a>
+<a href='productDetail-controler.php?id={$product['id']}'  class='btn btn-text-button ' >اطلاعات بیشتر</a>
 <div class='card-buttom'>
 
 <a href='basketProduct-controler.php?id={$product['id']} ' class='btn card-btn btn-outlined-button'>

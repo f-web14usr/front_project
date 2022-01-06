@@ -1,3 +1,4 @@
+
 .card-group{
     display: grid;
       grid-template-columns: auto auto auto;
@@ -22,14 +23,10 @@
        padding-bottom: 8px;
         overflow: hidden;
       display: block;
-      width: 330px;
+      width: 200px;
       max-height: fit-content;
 }
-.link-card{
-    
-   
-    background-color: none;
-}
+
 .link-card:focus{
     outline: none;
   
@@ -47,8 +44,9 @@
     opacity: 50%;
 }
 .filled-card:active{
-    background-color: hsl(277, 17%, 85%); 
-    box-shadow: none;
+    --primary:#2979FF;
+    background-color: #FFFBFE    ;
+    box-shadow: var(--primary) 0px 0px 7px ;
     
 }
 .card-img-top{
@@ -85,18 +83,7 @@
 .product-card-price::after{
     content: "تومان";
 }
-.card-btn.primary{
-    font-size: 18px;
-    
-   
-    --primary:#2979FF;
-    background-color: var(--primary);
-    text-shadow: #1C1B1F;
-    color:#FFFFFF ;
-    border:none;
-    font-family: Roboto Medium;
-    outline: none;
-}
+
 .swiper {
    width: 100vw;
    
@@ -104,7 +91,7 @@
   }
   .grid-container{
       display: grid;
-      grid-template-columns: auto auto auto    ;
+      grid-template-columns: auto auto auto   auto auto auto ;
       
       grid-gap: 8px;
     width: 700px;
@@ -122,10 +109,7 @@ grid-template-rows: 50vh;
  .like{
     color: red;
 }
-.basket-icon{
-   background-color:#00E676;
-   color: #FFFBFE  ;
-}
+
 .bookmark-icon{
     color: orange;
 }

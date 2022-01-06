@@ -106,31 +106,56 @@ box-shadow: none;
 .icon-btn{
     padding: 8px;
     border-radius: 20px;
-text-decoration: none;
+     text-decoration: none;
+     color: #000;
 }
 .icon-btn:hover{
 background-color: rgba(109, 123, 204, 0.20);
 
 }
-.like{
-    color: red;
+#go_top{
+    border-radius: 100px;
+    position: fixed;
+    bottom: 10px;
+    left: 8px;
+    z-index: 999999;
+  text-align: center;
+    padding: 0px 12px;
+     background-color: var(--primary);
 }
-.basket-icon{
-   background-color:#00E676;
-   color: #FFFBFE  ;
+
+.card-body .card-btn{
+    font-size: 18px;
+   padding: 12px  64px;
+   border:1px solid #00E676;
+   color: #00E676;
+    text-shadow: #1C1B1F;
+  font-family: inherit;
+  
 }
-.bookmark-icon{
-    color: orange;
+.card-body .card-click{
+   
+    font-size: 18px;
+    padding: 12px  64px;
+   background-color: #00E676;
+    color: #FFFFFF;
+     text-shadow: #1C1B1F;
+   font-family: inherit;
+  
+}
+#p-detail-button{
+   position: relative;
+ 
+    top: 65%;
+    z-index: 999999;
+    left:40%;
 }
 
 
 
 
 
-
-
-
-.btn-outlined-button,.btn-outlined-button:visited{
+.btn-outlined-button{
     background-color: #fffbfe00;
     border: 1px solid #2979FF;
     color:#2979FF;
@@ -155,10 +180,10 @@ background-color: rgba(109, 123, 204, 0.20);
     
 }
 .btn-outlined-button:active{
-    border: 1px solid #79747E;
-    background-color: #E7E0EC;
-    opacity: 0.5;
-    color: #6750A4;
+  
+    background-color: var(--primary);
+    
+    color: #FFFFFF ;
 }
 
 
@@ -213,7 +238,7 @@ a.btn{
 
 a.btn i{
    margin-right:8px ;
-   font-size: 18px;
+   font-size: 24px;
   
 }
 a.btn-text-button{
